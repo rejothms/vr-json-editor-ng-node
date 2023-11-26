@@ -1,8 +1,9 @@
 # vr-json-editor-ng-node
-
+## Node Min Version : node:18.13.0
 
 This project consists of a Node.js server and an Angular frontend, both containerized using Docker. The Node.js server runs on port 3003, and the Angular app runs on port 4200.
 
+## With Docker 
 ## Prerequisites
 
 Make sure you have Docker and Docker Compose installed on your machine.
@@ -15,8 +16,8 @@ Make sure you have Docker and Docker Compose installed on your machine.
 1. Clone the repository:
 
     ```bash
-    git clone <repository_url>
-    cd <repository_directory>
+    git clone (https://github.com/rejothms/vr-json-editor-ng-node.git)
+    cd repostiory contained docker compose file.
     ```
 
 2. Run the following command to start the services:
@@ -37,3 +38,25 @@ Make sure you have Docker and Docker Compose installed on your machine.
     ```bash
     docker-compose down
     ```
+
+## Without docker
+## Prerequisites
+vrjsoneditor - Angular front end. 
+vrserver      node server
+
+git clone  git clone (https://github.com/rejothms/vr-json-editor-ng-node.git)
+# Install Node.js server dependencies
+cd vrserver
+npm install
+
+# Install Angular app dependencies
+cd vrjsoneditor
+npm install
+
+# Inside the vrserver directory
+npm start
+
+# Inside the vrjsoneditor directory
+ng serve
+
+
