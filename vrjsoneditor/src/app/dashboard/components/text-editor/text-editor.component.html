@@ -1,0 +1,15 @@
+<div class="container">
+    <div #editablediv contenteditable="true" (input)="onContentChange()" spellcheck="false">
+        <ng-template   ngFor let-item [ngForOf]="jsonViewx" let-i="index">
+            <ng-template ngFor let-item1 [ngForOf]="item" let-j="index">
+
+                <div #editableindiv  tabindex="0" [class]="'cls-' + item1.className" [innerHTML]="item1.el"
+                    (click)="handleFocusIn(item1.className)" (focusout)="handleFocusOut(item1.className)"></div>
+            </ng-template>
+        </ng-template>
+    </div>
+    <div  style="margin-top: 50px; color: green;" *ngIf="fileData">{{jsonStatus === 'valid' ? 'Valid JSON, content shared.' : 
+    ( jsonStatus === 'invalid' ? 'Invalid Json, Sharing not started.' : '')}}</div>
+
+    <div *ngIf="lastpublisher"><span>Last published by: </span><span>{{lastpublisher}}</span></div>
+</div>

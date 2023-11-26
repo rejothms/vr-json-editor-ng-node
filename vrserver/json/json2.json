@@ -1,0 +1,22 @@
+{
+  "name": "RejoT",
+  "age": 22,
+  "isStudent": false,
+  "grades": [
+    95,
+    87,
+    92
+  ],
+  "address": {
+    "street": "00 St",
+    "city": {
+      "name": "Riga",
+      "post": "lv02"
+    },
+    "city2": {
+      "name": "Trivandrum",
+      "post": "IN"
+    }
+  },
+  "isMarried": true
+}

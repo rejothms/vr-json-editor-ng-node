@@ -1,0 +1,14 @@
+.container {
+  margin: 40px 0px 0px 40px;
+}
+
+div[contenteditable] {
+  width: 100%;
+  min-height: 150px;
+ // border: 1px solid #ccc;
+  padding: 8px;
+  overflow: auto;
+  outline: none;
+}
+
+

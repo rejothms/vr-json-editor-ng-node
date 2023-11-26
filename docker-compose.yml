@@ -1,0 +1,13 @@
+version: '2' # specify docker-compose version
+
+# Define the services/containers to be run
+services:
+  vr-jsoneditor: # name of the first service
+    build: vrjsoneditor # specify the directory of the Dockerfile
+    ports:
+      - "4200:4200" # specify port forewarding
+
+  vr-server: #name of the second service
+    build: vrserver # specify the directory of the Dockerfile
+    ports:
+      - "3003:3003" # ports forewarding

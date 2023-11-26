@@ -1,0 +1,21 @@
+header {
+    background-color: #3498db; /* Header background color */
+    color: #fff; /* Text color */
+  
+    .header-container {
+      padding: 20px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .logout {
+        margin:0px 10px 0px 15px;
+        cursor: pointer;
+      }
+    }
+  
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+  }

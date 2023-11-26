@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="list-container">
+    <ul class="file-list">
+      <li *ngFor="let file of jsonNameList" class="file-item" [ngClass]="{ 'selected': file === selectedFileName }"
+        (click)="selectFile(file)">
+        <h3>{{ file }}</h3>
+        @if(file === selectedFileName) {
+        <a  class="d-link" (click)="downLoadfile($event)">
+          <img src="../../../../assets/images/dicon.png" alt="Icon" class="d-icon">
+        </a>
+      }
+      </li>
+    </ul>
+  </div>
+  <div class="editor-view">
+    <app-text-editor [fileData]="selectedFile"></app-text-editor>
+  </div>
+</div>
