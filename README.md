@@ -60,3 +60,16 @@ git clone  git clone (https://github.com/rejothms/vr-json-editor-ng-node.git)
 ```ng serve ```
 
 
+## Application Workflow:
+
+Upon the initial launch, the application redirect the user to the login screen. Here, users can input their username to access the dashboard.
+
+The application using Socket.IO for real-time communication between the client and server. The connection is established upon the application's loading, and user-specific connections are enabled upon successful login to the dashboard.
+
+In the dashboard, the user is presented with a listing of JSON files retrieved from the server through a dedicated API endpoint. The server maintains a 'json' folder containing static JSON files.
+
+Upon selecting a JSON file, its content is dynamically loaded into a JSON editor( another API created ) on the right side of the dashboard. Users can then edit the JSON content in real-time. These changes are instantly send to other users who have the same JSON file open. It's important to note that edited JSON files must remain valid for seamless sharing among users.
+
+The application ensures that user details are not stored in any database.
+Additionally, users have the ability to download the edited JSON file. The application provides information about the last user who updated the file.
+
