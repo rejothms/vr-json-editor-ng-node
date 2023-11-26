@@ -40,23 +40,23 @@ Make sure you have Docker and Docker Compose installed on your machine.
     ```
 
 ## Without docker
-## Prerequisites
+ Prerequisites
 vrjsoneditor - Angular front end. 
 vrserver      node server
 
 git clone  git clone (https://github.com/rejothms/vr-json-editor-ng-node.git)
-# Install Node.js server dependencies
+#Install Node.js server dependencies
 cd vrserver
 npm install
 
-# Install Angular app dependencies
+-Install Angular app dependencies
 cd vrjsoneditor
 npm install
 
-# Inside the vrserver directory
+-Inside the vrserver directory
 npm start
 
-# Inside the vrjsoneditor directory
+-Inside the vrjsoneditor directory
 ng serve
 
 
