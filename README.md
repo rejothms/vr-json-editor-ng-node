@@ -57,6 +57,6 @@ npm install
 npm start
 
 -Inside the vrjsoneditor directory
-ng serve
+```ng serve ```
 
 
