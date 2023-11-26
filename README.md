@@ -46,11 +46,11 @@ vrserver      node server
 
 git clone  git clone (https://github.com/rejothms/vr-json-editor-ng-node.git)
 #Install Node.js server dependencies
-cd vrserver
+-cd vrserver
 ```npm install```
 
 -Install Angular app dependencies
-cd vrjsoneditor
+-cd vrjsoneditor
 ```npm install```
 
 -Inside the vrserver directory
