@@ -70,6 +70,7 @@ In the dashboard, the user is presented with a listing of JSON files retrieved f
 
 Upon selecting a JSON file, its content is dynamically loaded into a JSON editor( another API created ) on the right side of the dashboard. Users can then edit the JSON content in real-time. These changes are instantly send to other users who have the same JSON file open. It's important to note that edited JSON files must remain valid for seamless sharing among users.
 
-The application ensures that user details are not stored in any database.
 Additionally, users have the ability to download the edited JSON file. The application provides information about the last user who updated the file.
+
+This application not integrated with database. So server down will lost all the user details 
 
